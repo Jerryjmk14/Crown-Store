@@ -1,11 +1,24 @@
 import React from "react";
 
-function App() {
-  return (
-    <div>
-      <h1>Crown clothing e-commerce app</h1>
-    </div>
-  );
-}
+import CategoryItem from "./components/category item/CategoryItem";
+import Directory from "./components/directory/Directory";
 
-export default App;
+export default function App() {
+  const categories = [
+    { id: 1, title: "hats", imageUrl: "https://i.ibb.co/cvpntL1/hats.png" },
+    {
+      id: 2,
+      title: "jackets",
+      imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
+    },
+    {
+      id: 3,
+      title: "sneakers",
+      imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
+    },
+    { id: 4, title: "womens", imageUrl: "https://i.ibb.co/GCCdy8t/womens.png" },
+    { id: 5, title: "mens", imageUrl: "https://i.ibb.co/R70vBrQ/men.png" },
+  ];
+
+  return <Directory categories={categories} />;
+}
