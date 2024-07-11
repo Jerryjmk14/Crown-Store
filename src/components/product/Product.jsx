@@ -1,8 +1,7 @@
 import React from "react";
-import "./categoryItem.scss";
+import "./product.scss";
 
-export default function CategoryItem({ category }) {
-  const { title, imageUrl } = category;
+export default function Product({ title, imageUrl }) {
   return (
     <div className="category-container">
       <div
