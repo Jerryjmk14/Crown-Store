@@ -5,6 +5,7 @@ import {
 } from "../../firebase/firebase";
 import FormInput from "../form-input/FormInput";
 import "./sign-up.scss";
+import Button from "../button/Button";
 
 const defaultFormFields = {
   displayName: "",
@@ -90,7 +91,7 @@ export default function SignUp() {
           name="confirmPassword"
           value={confirmPassword}
         />
-        <button type="submit">Sign Up</button>
+        <Button type="submit">Sign Up</Button>
       </form>
     </div>
   );
