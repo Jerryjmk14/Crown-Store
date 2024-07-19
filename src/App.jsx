@@ -2,7 +2,7 @@ import React from "react";
 import Home from "./routes/home/Home";
 import NavBar from "./routes/navigation/NavBar";
 import { Route, Routes } from "react-router-dom";
-import SignIn from "./routes/sign-in/SignIn";
+import Authentication from "./routes/authentication/Authentication";
 
 export default function App() {
   const Shop = () => {
@@ -14,7 +14,7 @@ export default function App() {
       <Route path="/" element={<NavBar />}>
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
-        <Route path="signIn" element={<SignIn />} />
+        <Route path="auth" element={<Authentication />} />
       </Route>
     </Routes>
   );
